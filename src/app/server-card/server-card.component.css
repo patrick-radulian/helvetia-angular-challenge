@@ -1,0 +1,34 @@
+.card {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+}
+
+.active {
+    color: #32cd32;
+}
+
+.inactive {
+    color: #f44336;
+}
+
+.activity-text {
+    display: block;
+}
+
+.server-icon {
+    font-size: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+/* For the sake of easier demonstration, we use 599px */
+@media screen and (max-width: 599px) {
+    .server-icon {
+        display: none;
+    }
+
+    .activity-text {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+<mat-toolbar class="header">
+    <span>Servers</span>
+    <mat-slide-toggle [(ngModel)]="shouldValidate">Toggle validation</mat-slide-toggle>
+</mat-toolbar>
+
+<div class="container">
+    <div class="server-cards">
+        <app-server-card *ngFor="let entry of data" [server]="entry" [shouldValidate]="shouldValidate"></app-server-card>
+    </div>
+</div>

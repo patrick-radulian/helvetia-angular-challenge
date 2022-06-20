@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #303030;
+}
+
+/* mat-form-field color and validation override / fix */
+.mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: #32b6cd;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+    color: #32b6cd;
+}
+
+.mat-form-field.ng-invalid .mat-form-field-ripple {
+    background-color: #f44336;
+}
+
+.mat-form-field.ng-invalid .mat-form-field-label {
+    color: #f44336;
+}
+
+/* mat-slide-toggle color overrides */
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: #32cd32;
+}
+
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: #32cd3260;
+}

@@ -1,0 +1,28 @@
+.header {
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.server-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.divider {
+    margin-block: 3rem;
+}
+
+/* For the sake of easier demonstration, we use 599px */
+@media screen and (max-width: 599px) {
+    .server-cards {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,19 @@
+<mat-card class="card">
+    <mat-icon aria-hidden="false" aria-label="Example home icon" [ngClass]="server.active ? 'active' : 'inactive'">
+        {{ server.active ? "arrow_circle_up" : "arrow_circle_down" }}
+    </mat-icon>
+
+    <div class="activity-text">
+        <span>Server is </span>
+        <u>{{ server.active ? "active" : "inactive" }}</u>
+    </div>
+
+    <mat-icon class="server-icon" aria-hidden="false" aria-label="Example home icon">dns</mat-icon>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Server Name</mat-label>
+        <input matInput type="text" placeholder="Ex. Durian" [formControl]="serverLabel" />
+    </mat-form-field>
+
+    <mat-slide-toggle [(ngModel)]="server.active">Toggle Server</mat-slide-toggle>
+</mat-card>
